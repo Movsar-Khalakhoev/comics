@@ -7,10 +7,12 @@
 // op - opacity
 // f - font
 // p - padding
+// sh - shadow
+// mxh - max-height
+// fz - font-size
 
-
-$color-1: #283747
-$color-2: #c1c1c1
+$color-1: #283747 // Цвет-1
+$color-2: #c1c1c1 // Цвет-2
 
 $components_m: 10px // Отступы между компонентами
 $components_bdrs: 5px // Скругление углов компнентов
@@ -24,31 +26,34 @@ $font_1: bold 14px 'Montserrat', sans-serif // Стандартный шрифт
 $font_1_mobile: bold 12px 'Montserrat', sans-serif // Стандартный шрифт 1
 $font_2: 600 12px 'Montserrat', sans-serif // Стандартный шрифт 2
 
-$button_1_bgc: $color-1
-$button_1_f: $font_1
-$button_1_c: #fff
+$button_1_bgc: $color-1 // Фоновый цвет кнопки-1
+$button_1_f: $font_1 // Шрифт кнопки-1
+$button_1_c: #fff // Цвет текста кнопки-1
 
-$button_2_bgc: $color-2
-$button_2_f: $font_2
-$button_2_c: $color-1
+$button_2_bgc: $color-2 // Фоновый цвет кнопки-2
+$button_2_f: $font_2 // Шрифт кнопки-2
+$button_2_c: $color-1 // Цвет текста кнопки-2
 
 
-$pagination_h: 50px
-$pagination_buttons_w: 31%
-$pagination_buttons_h: $pagination_h * 0.7
-$pagination_buttons_bdrs: $pagination_buttons_h/2
+$pagination_h: 50px // Высота компоненты пагинации
+$pagination_buttons_w: 31% // Ширина кнопок пагинации
+$pagination_buttons_h: $pagination_h * 0.7 // Высота кнопок пагинации
+$pagination_buttons_bdrs: $pagination_buttons_h/2 // Радиус скругления углов кнопок пагинации
 
-$image_h: 350px
+$image_h: 350px // Высота компоненты картинки
 
-$info_h: 50px
-$info_button_w: 130px
-$info_button_h: $info_h * 0.7
-$info_button_bdrs: $components_bdrs
+$info_h: 50px // Высота компоненты информации
+$info_transcription_sh: 0px 0px 22px -4px #000000 // Тень блока транскрипции
+$info_transcription_mxh: 300px // Максимальная высота блока транскрипции
+$info_button_w: 130px // Ширина кнопки открытия блока транскрипции
+$info_button_h: $info_h * 0.7 // Высота кнопки открытия блока транскрипции
+$info_button_bdrs: $components_bdrs // Радиус скругления углов кнопки открытия транскрипции
 
-$links_h: 60px
-$links_copy_w: 100px
-$links_copy_w_mobile: 90px
-$links_copy_h: 20px
-$links_copy_bdrs: 5px
-$links_link_w: calc(100% - #{$links_copy_w} - 10px)
-$links_link_w_mobile: calc(100% - #{$links_copy_w_mobile} - 10px)
+$links_h: 60px // Высота компоненты ссылок
+$links_copy_w: 100px // Ширина кнопок копирования
+$links_copy_w_mobile: 90px // Ширина кнопок копирования на мобильных разрешениях
+$links_copy_h: 20px // Высота кнопок копирования
+$links_copy_bdrs: 5px // Радиус скругления углов кнопок копирования
+$links_link_fz: 14px // Размер шрифта ссылок
+$links_link_w: calc(100% - #{$links_copy_w} - 10px) // Ширина блока с ссылкой и поясняющей надписью
+$links_link_w_mobile: calc(100% - #{$links_copy_w_mobile} - 10px) // Ширина блока с ссылкой и поясняющей надписью на мобильных разрешениях
