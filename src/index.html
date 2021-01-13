@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://xkcd.com/s/919f27.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<title>xkcd</title>
+</head>
+<body>
+	<div class="comic">
+		<div class="comic__pagination pagination">
+			<button class="pagination__prev btn-1">Предыдущий</button>
+			<button class="pagination__random btn-1">Случайный</button>
+			<button class="pagination__next btn-1">Следующий</button>
+		</div>
+		<div class="comic__image image">
+			<img class="comic__image-img active" src="/" alt="Здесь должен был быть комикс...">
+			<svg class="comic__image-spinner" width="200px" height="200px" viewBox="0 0 100 100">
+				<g transform="rotate(0 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(30 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(60 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(90 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(120 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(150 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(180 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(210 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(240 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(270 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(300 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+					</rect>
+				</g><g transform="rotate(330 50 50)">
+					<rect x="47" y="24" rx="2.4" ry="2.4" width="6" height="12" fill="#283747">
+						<animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+					</rect>
+				</g>
+			</svg>
+		</div>
+		<div class="comic__info info">
+			<p class="info__transcription"></p>
+			<button class="info__button btn-1">Транскрипция</button>
+			<p class="info__date">Дата создания: <span class="info__date-locale"></span></p>
+		</div>
+		<div class="comic__links links">
+			<div class="links__comic">
+				<p class="links__comic-container">
+					Ссылка на комикс:
+					<span class="links__comic-link"></span>
+				</p>
+				<button class="links__comic-copy btn-2 copied">Скопировать</button>
+			</div>
+			<div class="links__image">
+				<p class="links__image-container">
+					Ссылка на картинку:
+					<span class="links__image-link"></span>
+				</p>
+				<button class="links__image-copy btn-2">Скопировать</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

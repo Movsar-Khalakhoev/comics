@@ -1,0 +1,42 @@
+@media (max-width: 576px)
+	.comic
+		width: 85%
+
+	.btn-1
+		padding: 0 2px 0 5px
+		font: $font_1_mobile
+
+	.pagination
+		padding: 0 5px
+		&__prev, &__random, &__next
+			width: 32%
+
+	.image
+		padding: 0 5px
+
+	.info
+		padding: 0 5px
+		&__button
+			width: 110px
+		&__date
+			font: $font_1_mobile
+			margin-left: 10px
+			&-locale
+				white-space: nowrap
+
+	.links
+		padding: 0 5px
+		&__comic, &__image
+			&-container
+				width: $links_link_w_mobile
+			&-copy
+				width: $links_copy_w_mobile
+
+@media (max-width: 450px)
+	.comic
+		width: 95%
+
+@media (max-height: 550px)
+	body
+		height: 100%
+		padding: 10px 0

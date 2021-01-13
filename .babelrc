@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-throw-expressions"
+  ],
+  "presets": [[
+    "@babel/env",
+    {
+      "corejs": 3,
+      "useBuiltIns": "usage",
+      "modules": false
+    }
+  ]]
+}

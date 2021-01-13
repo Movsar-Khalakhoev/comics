@@ -1,0 +1,45 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100vh
+	background: url('../img/background.jpg') no-repeat
+	background-size: cover
+	overflow: auto
+
+.comic
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: calc(#{$pagination_h} + #{$image_h} + #{$info_h} + #{$links_h} + 3*#{$components_m})
+	width: 450px
+
+
+.btn-1
+	background-color: $button_1_bgc
+	color: $button_1_c
+	font: $button_1_f
+	border: none
+	cursor: pointer
+	transition: background-color $transition
+	overflow: hidden
+	text-overflow: ellipsis
+	&:hover
+		background-color: darken($button_1_bgc,$blackout_degree)
+
+.btn-2
+	background-color: $button_2_bgc
+	color: $button_2_c
+	font: $button_2_f
+	border: none
+	cursor: pointer
+	transition: background-color $transition
+	overflow: hidden
+	text-overflow: ellipsis
+	&:hover
+		background-color: darken($button_2_bgc,$blackout_degree)

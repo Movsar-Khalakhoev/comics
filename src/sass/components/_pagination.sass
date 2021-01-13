@@ -1,0 +1,23 @@
+.comic
+	&__pagination
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: $pagination_h
+		border-radius: $components_bdrs
+		background-color: hexToRgba($components_bgc, $components_bg_op)
+		padding: $components_p
+
+.pagination
+	&__prev, &__random, &__next
+		width: $pagination_buttons_w
+		height: $pagination_buttons_h
+		&.disabled
+			pointer-events: none
+			opacity: 0.7
+	&__prev
+		border-top-left-radius: $pagination_buttons_bdrs
+		border-bottom-left-radius: $pagination_buttons_bdrs
+	&__next
+		border-top-right-radius: $pagination_buttons_bdrs
+		border-bottom-right-radius: $pagination_buttons_bdrs

@@ -1,0 +1,30 @@
+.comic
+	&__links
+		height: $links_h
+		border-radius: $components_bdrs
+		background-color: hexToRgba($components_bgc, $components_bg_op)
+		padding: 0 $components_p
+
+.links
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	&__comic, &__image
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 40%
+		&-container
+			width: $links_link_w
+			color: #fff
+			font: $font_2
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		&-link
+			flex-grow: 1
+			font-size: 14px
+		&-copy
+			width: $links_copy_w
+			height: $links_copy_h
+			border-radius: $links_copy_bdrs

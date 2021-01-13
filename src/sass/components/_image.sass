@@ -1,0 +1,22 @@
+.comic
+	&__image
+		display: flex
+		align-items: center
+		justify-content: center
+		height: $image_h
+		border-radius: $components_bdrs
+		background-color: hexToRgba($components_bgc, $components_bg_op)
+		padding: $components_p
+		&-img
+			display: none
+			width: 100%
+			height: 100%
+			object-fit: contain
+			&.active
+				display: block
+		&-spinner
+			display: none
+			margin: auto
+			shape-rendering: auto
+			&.active
+				display: block
